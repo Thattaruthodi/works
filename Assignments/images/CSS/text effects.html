@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            white-space: nowrap;
+            border: 1px solid black;
+            width: 300px;
+            overflow: hidden;
+            text-overflow: clip;
+        }
+        div.note {
+            border: 1px solid blue;
+            width: 200px;
+            padding: 5px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+           
+        }
+        div.note:hover{
+            overflow: visible;
+        }
+        h3 {
+          writing-mode: vertical-lr;
+        }
+    </style>
+</head>
+<body>
+    <p>This is some long text that will not fit in the box</p>
+    <div class="note"> <span>This is some long text that will not fit in the box</span></div>
+    <h3>jfkgrghireogo vinodhurthurhiuwueiohueurhhhhu</h3>
+</body>
+</html>

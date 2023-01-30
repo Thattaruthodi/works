@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+           background-color: blue;
+           height: 200px;
+           width: 200px;
+           animation-name: a1;
+           animation-duration: 6s;
+        }
+        div.a2 {
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            animation-name: a2;
+            animation-duration: 4s;
+
+        }
+        
+        @keyframes a1 {
+            from {background-color: chocolate;}
+            to {background-color: darkgreen;}
+        }
+        @keyframes a2 {
+            0% {background-color: chartreuse;}
+            15% {background-color:red ;}
+            50% {background-color:white ;}
+             100%{background-color: black;}
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div class="a2">
+      happy
+    </div>
+</body>
+</html>

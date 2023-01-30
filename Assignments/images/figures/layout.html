@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0;
+    }
+   .header {
+    padding: 25px;
+    text-align: center;
+   background-color: bisque;
+}
+.nav a {
+    
+    padding: 20px 15px;
+    float: left;
+    text-decoration: none;
+    display: block;
+    color:white
+}
+.nav {
+background-color: black;
+overflow: auto;
+}
+.nav a:hover  {
+background-color: aliceblue;
+color: black;
+}
+.coloumn {
+    width: 33.33%;
+    padding: 15px;
+    float: left;
+} 
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+@media screen and (max-width:600px) {
+    .coloumn {
+        width: 100%;
+    }
+}
+
+</style>
+<body>
+    <h1 class="header">Header</h1>
+    <div class="nav">
+        <a href="#"> link</a>
+         <a href="#"> link</a>
+          <a href="#"> link</a>
+    </div>
+
+    <div class="row">
+    <div class="coloumn">
+        <h2>Coloumn</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique.
+     Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+     </div>
+
+     <div class="coloumn">
+        <h2>Coloumn</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique.
+     Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+     </div>
+
+     <div class="coloumn">
+        <h2>Coloumn</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique.
+     Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+     </div>
+     </div>
+</body>
+</html>

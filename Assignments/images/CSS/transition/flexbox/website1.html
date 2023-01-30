@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .main {
+        background-color: rgb(20, 20, 94);
+        color: white;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .container {
+        color: white;
+        text-align: center;
+        display: flex;
+       flex-direction: row;
+      }
+      .container h2 {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        font-weight: lighter;
+        font-size: 2rem;
+      }
+      .container p {
+        font-size: 22px;
+
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+      .container > div {
+        background-color: rgb(148, 9, 148);
+        padding: 20px;
+        margin: 0;
+        width: 100%;
+      }
+      .container > div:hover {
+        background-color: darkblue;
+      }
+
+      .z1 {
+        border: 1px solid white;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        background-color: white;
+        color: black;
+        padding: 10px;
+        text-align: center;
+        margin-left: 250px;
+      }
+
+      .bar {
+        border: 1px solid white;
+        background-color: white;
+        border-radius: 30px;
+        width: 700px;
+        margin-left: 600px;
+        padding: 10px;
+        height: auto;
+      }
+      .bar > a {
+        padding: 15px;
+        text-decoration: none;
+
+        color: black;
+      }
+      .main button {
+        background-color: blue;
+        color: white;
+        border-radius: 30px;
+        border: 1px solid blue;
+        padding: 10px;
+        width: 200px;
+        margin-bottom: 55px;
+        margin-top: 45px;
+        font-size: medium;
+      }
+      .gym button {
+        background-color: rgb(20, 20, 94);
+        color: white;
+
+        border: 1px solid rgb(20, 20, 94);
+        padding: 10px;
+        width: 200px;
+        font-size: medium;
+      }
+      .gym2 button {
+        background-color: darkgoldenrod;
+        color: black;
+        border: 1px solid darkgoldenrod;
+        padding: 15px;
+        width: 200px;
+        font-size: medium;
+      }
+
+      .row button {
+        background-color: rgb(20, 20, 94);
+        color: white;
+        border: 1px solid rgb(20, 20, 94);
+        padding: 15px;
+        width: 200px;
+        font-size: medium;
+        margin-top: 40px;
+      }
+      .last button {
+        background-color: darkgoldenrod;
+        color: black;
+        border: 1px solid darkgoldenrod;
+        padding: 15px;
+        width: 200px;
+        font-size: medium;
+        margin-top: 40px;
+      }
+      .f2 button {
+        background-color: rgb(20, 20, 94);
+        color: white;
+        border: 1px solid rgb(20, 20, 94);
+        padding: 10px 25px;
+        width: 150px;
+        font-size: medium;
+      }
+      .main button:hover {
+        background-color: white;
+        color: black;
+      }
+      .gym button:hover {
+        background-color: rgb(114, 11, 76);
+      }
+      .gym2 button:hover {
+        background-color: white;
+      }
+      .row button:hover {
+        background-color: black;
+      }
+      .last button:hover {
+        background-color: white;
+        color: black;
+      }
+      .f2 button:hover {
+        background-color: black;
+      }
+      ul {
+        list-style-image: url("tick1\ br.png");
+        line-height: 60px;
+      }
+
+      .gym {
+        display: flex;
+        flex-direction: row;
+        padding: 35px;
+        background-color: white;
+        color: black;
+        width: 100%;
+      }
+      .gymleft {
+        flex: 50%;
+        width: 100%;
+        margin-left: 300px;
+        padding: 25px;
+      }
+      .gymright {
+        flex: 50%;
+        width: 100%;
+        text-align: left;
+      }
+      .gymright p {
+        font-size: 20px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+      .gymright h1 {
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .gymright h2 {
+        font-weight: bold;
+        font-size: 2rem;
+      }
+      .gym2 {
+        display: flex;
+        flex-direction: row;
+        padding: 25px;
+        background-color: rgb(20, 20, 94);
+        color: white;
+      }
+      .gym2left {
+        flex: 50%;
+        width: 100%;
+        padding: 25px;
+        margin-left: 300px;
+      }
+      .gym2right > img {
+        flex: 50%;
+        width: 100%;
+        padding-top: 45px;
+        margin-right: 400px;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      .classes {
+        text-align: center;
+      }
+      .image {
+        opacity: 1;
+        display: block;
+        float: left;
+
+        max-width: 100%;
+        height: auto;
+        /* height: 550px; */
+      }
+
+      .row {
+        display: flex;
+         flex-wrap: wrap;
+        
+        padding: 35px 45px;
+        position: relative;
+        justify-content: space-around;
+      
+       align-items: center;
+       flex-direction: row;
+      }
+      .row > div {
+        flex: 1;
+      }
+      .coloumn {
+        padding: 5px;
+      }
+      .coloumn img {
+        margin-top: 15px;
+        margin-bottom: 5px;
+      }
+      .middle1 {
+        opacity: 0;
+        transition: 0.5 ease;
+        position: absolute;
+        top: 60%;
+        left: 15%;
+      }
+      .middle2 {
+        opacity: 0;
+        transition: 0.5 ease;
+        position: absolute;
+        top: 61%;
+        left: 45%;
+      }
+      .middle3 {
+        opacity: 0;
+        transition: 0.5 ease;
+        position: absolute;
+        top: 61%;
+        left: 78%;
+      }
+      .text {
+        border: 2px solid white;
+        color: white;
+        padding: 15px;
+      }
+      .coloumn:hover .image {
+        opacity: 0.6;
+      }
+
+      .coloumn:hover .middle1 {
+        opacity: 1;
+      }
+      .coloumn:hover .middle2 {
+        opacity: 1;
+      }
+      .coloumn:hover .middle3 {
+        opacity: 1;
+      }
+      .main h1 {
+        font-style: initial;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-weight: bolder;
+        font-size: 60px;
+        letter-spacing: 5px;
+        line-height: 5rem;
+        padding: 25px;
+      }
+      .main p {
+        font-size: 20px;
+        padding: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      #fixed {
+        background-color: darkblue;
+      }
+      .main {
+        background-image: url("gym10.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: auto;
+      }
+      .last {
+        background-image: url("gym8.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: auto;
+        width: 100%;
+        color: white;
+        text-align: center;
+        justify-content: center;
+        margin-top: 13rem;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+      }
+      .last h2 {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        font-size: 3rem;
+      }
+      .last p {
+        text-align: center;
+        font-size: 20px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+      .form {
+        display: flex;
+        background-color: white;
+        color: black;
+        flex-direction: row;
+        margin: 2rem 5rem 5rem 5rem;
+        padding: 20px;
+      }
+
+      .f1 {
+        flex: 50%;
+        width: 50%;
+      }
+      .f2 {
+        flex: 50%;
+        width: 50%;
+        line-height: 60px;
+      }
+      .f2 i {
+        font-size: 1.5rem;
+        color: darkblue;
+      }
+      .f2 span {
+        font-size: 1.2rem;
+      }
+      input[type="text"] {
+        border: none;
+        border-bottom: 2px solid black;
+        width: 80%;
+        font-size: 1.3rem;
+      }
+      .end {
+        display: flex;
+        flex-direction: row;
+
+      }
+      .e1 {
+        background-color: black;
+        color: white;
+        flex: 33%;
+        width: 33%;
+        padding: 6rem;
+        text-align: left;
+        font-size: 1.1rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        line-height: 1.8rem;
+      }
+      .end h2 {
+        font-weight: 0.2rem;
+      }
+      .e1 i {
+        font-size: 2rem;
+      }
+      .footer {
+        background-color: darkblue;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-size: 20px;
+      }
+      
+
+      @media screen and (max-width: 700px) {
+        
+       .row,.container,.gym,.gym2,.end,.form{
+          flex-direction: column;
+          text-align: center;
+         
+         
+        }
+        .gymleft {
+          margin-left: 0;
+         
+          
+        }
+        .gymright {
+          text-align: center;
+          
+        }
+        .gym2left {
+          margin-left: 0;
+          
+        }
+        .gym2right {
+          margin-right: 0;
+          width: 100%;
+          
+        }
+        .gym2right > img {
+          margin-right: 0;
+        }
+        .gymleft img {
+          max-width: 100%;
+        }
+        .image {
+         max-width: 100%;
+        }
+       .e1 {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+        width: 100%;
+       }
+       .form {
+        margin: 0;
+        width: 100%;
+
+       }
+       .f1,.f2 {
+        width: 100%;
+       }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h2>BBB</h2>
+      <div class="bar">
+        <a href="#"> HOME</a>
+        <a href="#"> ABOUT</a>
+        <a href="#"> CLASSES</a>
+        <a href="#"> EVENTS</a>
+        <a href="#"> NEWS</a>
+        <a href="#"> CONTACT US</a>
+      </div>
+      <h1>
+        THE HEALTHY <br />
+        WAY OF LIFE COMPANY
+      </h1>
+      <p>
+        It is a long established fact that a reader will be distracted by the
+        readable
+      </p>
+
+      <button>Read More</button>
+    </div>
+
+    <div class="container">
+      <div>
+        <h1 class="z1">01</h1>
+        <h2>FITENESS</h2>
+        <p>There are many variations of passages Ipsum available, but the</p>
+      </div>
+
+      <div id="fixed">
+        <h1 class="z1">02</h1>
+        <h2>FITENESS</h2>
+        <p>There are many variations of passages Ipsum available, but the</p>
+      </div>
+
+      <div>
+        <h1 class="z1">03</h1>
+        <h2>FITENESS</h2>
+        <p>There are many variations of passages Ipsum available, but the</p>
+      </div>
+    </div>
+
+    <div class="gym">
+      <div class="gymleft">
+        <img src="../gym1.png" alt="1" height="300px" width="500px" />
+      </div>
+
+      <div class="gymright">
+        <h1>WEL COME</h1>
+        <h2>BBB GYM</h2>
+        <p>
+          majority have suffered alteration in some form, by injected humour, or
+          randomised words which don't look even slightly believable. If you are
+          going to use a passage of Lorem Ipsum, you need to be sure there isn't
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when
+        </p>
+        <button>Read More</button>
+      </div>
+    </div>
+
+    <div class="gym2">
+      <div class="gym2left">
+        <h1 style="font-weight: bold">WE PROVIDE SERVICES</h1>
+        <ul style="font-size: 30px">
+          <li>BEST CARDIO PROGRAMS</li>
+          <li>TAEKWONDO CLASSES OPEN</li>
+          <li>SAUNA BATH AVAILABLE</li>
+          <li>TIME BASE EXERCISE</li>
+        </ul>
+        <button>SEE MORE</button>
+      </div>
+
+      <div class="gym2right">
+        <img src="../gym2.png" alt="2" height="300px" width="400px" />
+      </div>
+    </div>
+
+    <div class="classes">
+      <h1 style="font-weight: 10rem; color: darkblue">POPULAR</h1>
+      <h1 style="font-weight: bold; color: black">CLASSES AT BBB FITNESS</h1>
+    </div>
+
+    <div class="">
+      <div class="row">
+        <div class="coloumn">
+          <img src="../gym3.png" alt="1" class="image" />
+          <div class="middle1">
+            <div class="text">VIEW MORE</div>
+          </div>
+        </div>
+
+        <div class="coloumn">
+          <img src="../gym4.png" alt="2" class="image" />
+          <div class="middle2">
+            <div class="text">VIEW MORE</div>
+          </div>
+        </div>
+
+        <div class="coloumn">
+          <img src="../gym5.png" alt="3" class="image" />
+          <div class="middle3">
+            <div class="text">VIEW MORE</div>
+          </div>
+        </div>
+         <button>SEE MORE</button>
+      </div>
+     
+    </div>
+
+    <div class="last">
+      <h2>
+        <span style="font-weight: lighter"> OUR</span> <br />
+        SUCCESS STORIES
+      </h2>
+      <p>
+        It is a long established fact that a reader will be distracted by the
+        readable content of a <br />page when looking at its layout. The point
+        of using Lorem Ipsum is that it has a more-or- <br />
+        less normal distribution of letters,
+      </p>
+      <button>Read More</button>
+    </div>
+
+    <h3 style=" text-align: center;
+                padding: 30px;
+                font-size: 30px;
+               font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+               Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+               sans-serif;">CONTACT <span style="font-weight: lighter"> US</span>
+    </h3>
+
+    <div class="form">
+      <div class="f1">
+        Google Maps Platform rejected your request. This API project is not
+        authorized to use this API.
+      </div>
+
+      <div class="f2">
+        <form action="">
+          <input type="text" name="Name" id="Name" placeholder="Name" />
+          <input type="text" name="Email" id="Email" placeholder="Email" />
+          <input
+            type="text"
+            name="PhoneNumber"
+            id="PhoneNumber"
+            placeholder="PhoneNumber"
+          />
+          <input
+            type="text"
+            name="Message"
+            id="Message"
+            placeholder="Message"
+          />
+        </form>
+        <button>SEND</button> <br />
+        <span style="font-size: 1.2rem">
+          <i class="bi bi-geo-alt-fill"></i>Locations</span
+        >
+        <br />
+        <span style="font-size: 1.2rem">
+          <i class="bi bi-phone"></i>+01 9876543210</span
+        >
+        <br />
+        <span style="font-size: 1.2rem">
+          <i class="bi bi-envelope-fill"></i> mail@domain.com</span
+        >
+      </div>
+    </div>
+
+    <div class="end">
+      <div class="e1">
+        <h2>ABOUT</h2>
+        <p>
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form, by injected
+          humour, or randomised words which don't look even slightly
+        </p>
+      </div>
+
+      <div class="e1">
+        <h2>ADDRESS</h2>
+        <p>
+          Address: 73 Canal Street, New York, NY<br />
+          Tel: +01 2=1234567890<br />
+          Fax: +01 9876543210<br />
+          Email: mail@domain.com
+        </p>
+        <i class="bi bi-facebook"></i> &emsp;
+        <i class="bi bi-twitter"></i> &emsp; <i class="bi bi-google"></i> &emsp;
+        <i class="bi bi-youtube"></i> &emsp;
+        <i class="bi bi-linkedin"></i>
+      </div>
+
+      <div class="e1" style="line-height: 2rem;">
+        <h2>OUR TIMINGS</h2>
+        <span>Monday &emsp; 8:00 am - 9:00 pm </span><br />
+        <span> Tuesday &emsp;8:00 am - 9:00 pm</span><br />
+        <span> Thursday &emsp; 8:00 am - 9:00 pm</span><br />
+        <span>Friday &emsp; 8:00 am - 9:00 pm</span><br />
+        <span> Saturday &emsp;8:00 am - 9:00 pm</span><br />
+        <span> Sunday &emsp;CLOSED</span>
+      </div>
+    </div>
+
+    <div class="footer">2045 All Rights Reserved. By HTML Design</div>
+  </body>
+</html>

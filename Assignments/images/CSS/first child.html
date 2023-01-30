@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p i:first-child {
+            color: blue;
+        }
+        p::first-line {
+            background-color: aqua;
+            color: red;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        p::first-letter{
+            color: cornflowerblue;
+            font-size: 40px;
+        }
+        h1::after{
+            content: url("man.png");
+        }
+        ::selection{
+            background-color: blueviolet;
+            color: darkgoldenrod;
+        }
+    </style>
+</head>
+<body>
+    <p>cbhef cdnjshrfudghv cbhef cdnjshrfudghv cbhef cdnjshrfudghv cbhef cdnjshrfudghv cbhef cdnjshrfudghv cbhef cdnjshrfudghvcbhef cdnjshrfudghvcbhef cdnjshrfudghv</p>
+    <p>cbhef cdnjshrfudghv</p>
+ <h1>butterfly</h1>
+    <div>
+        <p>cbhef <i>fnrrrjigb</i> cdnjshrf<i>fnrrrjigb</i>udghv</p>
+        <p>cbhef <i>fnrrrjigb</i>cdnjshrf<i>fnrrrjigb</i>udghv</p>
+    </div>
+</body>
+</html>

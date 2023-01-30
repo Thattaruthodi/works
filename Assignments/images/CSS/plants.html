@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table,th,td {
+      margin-left: 300px;
+      border-collapse: collapse;
+      text-align: center;
+      padding: 20px;
+      margin-top: 80px;
+    }
+
+th {
+    font-size:30px;
+    font-weight: 10px;
+    border-bottom: 1px solid white;
+    color: white;
+    width:50% ;
+} 
+td {
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    width:50%;
+}
+    .flower {
+        float: left;
+        display: block;
+        border: 2px solid lightgrey;
+        box-sizing: border-box;
+        margin:5px;
+        padding: 10px;
+        width:25%;
+    } 
+
+    img {
+        margin-left: auto;
+        margin-right: auto;
+       display: block;
+       height: 200px;
+       width: 200px;
+    }
+    
+    .flower h2 {
+        text-align: center;
+    }
+    .flower p {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .image {
+         background-image:url("../leaf.jpeg");
+         height:800px;
+         width: 100%;
+
+    }
+    .note {
+        float: left;
+        display: block;
+        width: 45%;
+       
+        
+        
+    }
+     .content {
+       
+        float:left;
+        display: block;
+        color: white;
+       line-height: 1.4;
+     padding-right: 20px;
+     padding-top: 20px;
+     text-align: right;
+     font-size: 20px;
+     width: 45%;
+      
+    } 
+    button {
+        background-color: white;
+        color: black;
+        text-align: center;
+        padding: 20px;
+        width: 200px;
+        height: 50px;
+        border-radius: 5px;
+    }
+
+    .gallery {
+        height: 100vh
+    }
+
+    @media screen and (max-width:800px) {
+        .flower {
+            width: 45%;
+         } 
+         .gallery {
+            height: 120vh;
+         }
+        .note,.content {
+            width: 95%;
+           
+        } 
+        .content {
+         text-align: center;
+          float:right;
+        }
+         .note table,th,td {
+            margin-left:200px;
+            padding: 10px;
+        }
+        .image {
+            height: 1400px;
+        }
+        
+        
+    } 
+    
+    
+     @media screen and (max-width:400px) {
+        .flower {
+            width: 100%;
+        } 
+        .note,.content {
+            width: 90%;
+          
+        } 
+        .content {
+          text-align: center;
+          float:right;
+        }
+        .note table,th,td {
+            margin-left:20px;
+            padding: 10px;
+           
+        }
+        .image {
+          height: 5000px;
+        }
+        .gallery {
+            height: 250vh;
+        }
+        
+        
+    } 
+   
+
+   
+</style>
+<body>
+    <div class="gallery">
+   <div class="flower">
+        <img src="plant1.jpg" alt="">
+       <h2>Floral Vibrant</h2> 
+ <p> It is a long established fact that a reader will be distracted <br> by the readable content of a page when looking at it's layout. <br>
+The point of using Lorem Ipsumletters, as opposed to using</p>
+    </div>
+
+    <div  class="flower">
+        <img src="../plant2.jpg" alt="">
+         <h2>Floral Vibrant</h2> 
+ <p> It is a long established fact that a reader will be distracted <br> by the readable content of a page when looking at it's layout.  <br>
+The point of using Lorem Ipsumletters, as opposed to using</p>
+    </div>
+
+    <div  class="flower">
+        <img src="../plant3.jpg" alt="">
+         <h2>Floral Vibrant</h2> 
+ <p> It is a long established fact that a reader will be distracted <br>  by the readable content of a page when looking at it's layout.  <br>
+The point of using Lorem Ipsumletters, as opposed to using</p>
+    </div>
+
+       <div class="flower">
+        <img src="plant1.jpg" alt="">
+       <h2>Floral Vibrant</h2> 
+ <p> It is a long established fact that a reader will be distracted <br> by the readable content of a page when looking at it's layout. <br>
+The point of using Lorem Ipsumletters, as opposed to using</p>
+    </div>
+
+    <div  class="flower">
+        <img src="../plant2.jpg" alt="">
+         <h2>Floral Vibrant</h2> 
+ <p> It is a long established fact that a reader will be distracted <br> by the readable content of a page when looking at it's layout.  <br>
+The point of using Lorem Ipsumletters, as opposed to using</p>
+    </div>
+
+    <div  class="flower">
+        <img src="../plant3.jpg" alt="">
+         <h2>Floral Vibrant</h2> 
+ <p> It is a long established fact that a reader will be distracted <br>  by the readable content of a page when looking at it's layout.  <br>
+The point of using Lorem Ipsumletters, as opposed to using</p>
+    </div>
+    </div>
+   
+    
+    
+
+     <div class="image">
+       <div class="note">
+         <table>
+            <tr> 
+                <th>50</th>
+            </tr>
+
+            <tr>
+                <td>Satisfaction</td>
+            </tr>
+
+            <tr>
+                <th>50</th>
+            </tr>
+
+            <tr>
+                
+                <td>Free Delivery</td>
+            </tr>
+
+            <tr>
+                <th>50</th>
+            </tr>
+
+            <tr>
+                <td>Store Locators</td>
+            </tr>
+
+        </table>
+        </div>
+        
+
+        <div class="content">
+        <h1 style="text-decoration: underline;">About US</h1>
+        <p>It is a long established fact that a reader will be  distracted by the readable content of a  page when looking at it's layout. 
+            The point of using Lorem Ipsum is that  it has a more-or-less normal distribution of letters, as   opposed to using 'Content here,
+            content here', making it look like readable English. Many desktop publishing packages and It is   a long established fact that a 
+            reader will be distracted by the  readable content of a page when looking at it's layout.   The point of using Lorem Ipsum is that
+            it has a more-or-less normal  distribution of letters, as opposed to using 'Content here,  content here', making it look like readable English.
+            Many desktop  publishing packages and web pageweb page.</p>
+
+            <button>READ MORE</button>
+         </div>
+         </div>
+ 
+</body>
+</html>

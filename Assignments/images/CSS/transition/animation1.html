@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: darkred;
+            height: 100px;
+            width: 100px;
+            animation-name: z1;
+            animation-duration: 4s;
+            position: relative;
+            animation-delay:-2s;
+            animation-iteration-count: 2;
+            animation-direction: alternate-reverse;
+            animation-fill-mode: forwards;
+        }
+        @keyframes z1 {
+            0% {background-color: blue; top:10px; left: 20px;}
+             20% {background-color:gray; top: 40px;; left: 400px;}
+              40% {background-color:black; top: 80px;; left: 500px;}
+               80% {background-color: skyblue; top: 100px;; left: 800px;}
+            
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

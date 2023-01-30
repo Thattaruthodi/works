@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .f1 {
+            display: inline-block;
+            position: relative
+           
+        }
+        .r1 {
+            visibility: hidden;
+            background-color: darkgreen;
+            padding: 15px;
+            position: absolute;
+            color: white;
+            border-radius: 6px;
+           top: 150%;
+            margin-left: -60px;
+        }
+        .f1:hover .r1 {
+            visibility: visible;
+        }
+        .f1 .r1::after {
+            content: "";
+            position: absolute;
+         bottom: 100%;
+            left: 50%;
+            border-width: 6px;
+            border-style: solid;
+            margin-left: -5px;
+            border-color: transparent transparent  darkgreen transparent;
+        }
+    </style>
+</head>
+<body style="text-align:center;">
+    <h2>Top Tooltip w/ Bottom Arrow</h2>
+
+   <div class="f1">Flower
+    <span class="r1">Rose</span>
+   </div> 
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0;
+      
+    }
+    .header {
+        background-color: rgb(23, 23, 59);
+        color: white;
+        padding: 20px 40px;
+        text-align: center;
+        font-size: 30px;
+       
+    }
+    .navbar {
+        background-color: gray;
+        padding:20px 20px 20px 0;
+        display: flex;
+      
+    }
+    .navbar a {
+        text-decoration: none;
+        color: black;
+        padding: 20px;
+        font-size: 20px;
+    }
+    .navbar a:hover {
+        background-color: black;
+        color: aliceblue;
+    }
+    .part1 {
+        flex: 30%;
+        background-color:rgb(121, 159, 172);
+        padding: 20px;
+        width: 100%;
+    }
+    .part2 {
+        flex: 70%;
+         background-color:lightblue ;
+        padding: 20px;
+          width: 100%;
+    }
+    .footer {
+        text-align: center;
+        background-color: lightgrey;
+        padding: 20px;
+        width: 100%;
+    }
+    .row {
+        display: flex;
+        flex-wrap:wrap;
+         
+    }
+    .image {
+      padding: 10px;
+      width: 100%;
+    }
+    img {
+        height: auto;
+         max-width: 100%;
+    }
+    @media screen and (max-width:700px) {
+        .navbar,.row {
+            flex-direction: column;
+            text-align: center;
+            
+        }
+        .image {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+ 
+    
+</style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>MUSIC &VIDEO</h1>
+       <h3>unlimited  music and video</h3>
+    </div>
+
+    <div class="navbar">
+        <a href="#">link</a>
+         <a href="#">link</a>
+          <a href="#">link</a>
+           <a href="#">link</a>
+    </div>
+     
+    <div class="row">
+    <div class="part1">
+        <h3>About music</h3>
+    
+       <div class="image"> <img src="muuusicccc.jpeg" alt="m1"></div>
+        <h3>more</h3>
+          <div class="image"> <img src="../z1.png" alt=""></div>
+             <div class="image"><img src="../z2.png" alt=""></div>
+             <div class="image"><img src="../z3.jpeg" alt=""></div>
+    </div>
+
+    <div class="part2">
+
+        <h2>TITLE HEADING</h2>
+        <H4>Title Description 21/12/2020</H4>
+          <div class="image"> <img src="../v1.webp" alt="v1"></div>
+        
+        <p>Some text..  </p>
+       <p>  Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco.      </p>
+
+         <h2>TITLE HEADING</h2>
+        <H4>Title Description 21/12/2020</H4>
+          <div class="image"> <img src="../v1.webp" alt="v1"></div>
+        
+        <p>Some text..  </p>
+       <p>  Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco.      </p>
+    </div>
+     </div>
+
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+   
+</body>
+</html>

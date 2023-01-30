@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+</script>
+</head>
+<body>
+    <p id="demo">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+<p id="rose">flower</p>
+<button type="button" onclick="myFunction()"> jasmine</button>
+<script>
+    function myFunction() {
+        document.getElementById("rose").innerHTML="leaf.";
+    }
+</script>
+
+<hr>
+<h1 id="bf">butterfly</h1>
+<button type="button" onclick="myFunction()">moon</button>
+
+<script src="functn.js"></script>
+
+<p id="sum"> addition</p>
+<script>
+document.getElementById("sum").innerHTML = 7 + 6;
+</script>
+<hr>
+<p id="mul"></p>
+<script>
+    var x;
+    x=4;
+    document.getElementById("mul").innerHTML = x *16;
+</script>
+<hr>
+<p id="mul1"></p>
+<script>
+   var a,b;
+    a=4+10;
+    b=a+5;
+      document.getElementById("mul1").innerHTML =b;
+
+</script>
+<hr>
+<p id="constant"></p>
+<script>
+    const price1=10;
+      const price2=20;
+      let total=price1+ price2;
+       document.getElementById("constant").innerHTML =total;
+</script>
+
+<p id="arithmtc"></p>
+<script>
+    x=8;
+    y=(200+40)*x;
+         document.getElementById("arithmtc").innerHTML =y;;
+</script>
+
+<p id="assign"></p>
+<script>
+var x = 10;
+x += 15;
+document.getElementById("assign").innerHTML = x;
+</script>
+
+<p id="plus"></p>
+<script>
+    let text1="femi";
+    let text2="femina";
+    let text3=text1 + "" + text2;
+   document.getElementById("plus").innerHTML = text3; 
+</script>
+
+<p id="equal"></p>
+<script>
+    let text4="he has";
+    text4 += "beautiful eyes";
+    document.getElementById("equal").innerHTML = text4; 
+</script>
+
+<p id="object"></p>
+<script>
+ const man= {
+      firstname:"Ramya",
+      LASTNAME:"Menon",
+      Age:15,
+      place:"Kottakkal"
+
+    }
+     document.getElementById("object").innerHTML = 
+     man. firstname + " is " + man. Age +"years old"; 
+</script>
+</body>
+</html>

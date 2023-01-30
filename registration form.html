@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form{
+            border: 2px solid black;
+            background-color: bisque;
+            /* text-align: center; */
+          
+          height: 800px;
+          width: 800px;
+         text-align: center;
+        
+        }
+
+     .register{
+     background-color:white;
+     text-align:center ;
+     border: 1px solid black;
+    
+margin-left: 70%;
+
+   }
+    </style>
+</head>
+<body>
+  
+
+  <form action="" class="form">
+
+    <h2>Registration Form</h2>
+    <table>
+      <tr>
+        <td><label for="Full Name">Full Name  &emsp; &emsp; &emsp;</label></td>
+        <td><input type=" text" name="fname" id="fname"><br><br></td>
+      </tr>
+      <tr>
+        <td><label for="Company">Company &emsp; &emsp;  &emsp;</label></td>
+        <td> <input type="text" name="Company" id="Company"><br><br></td>
+      </tr>
+
+        <tr>
+          <td> <label for="Email">Email &emsp; &emsp; &emsp; &emsp;</label></td>
+          <td><input type="email" name="Email" id="Email"><br><br></td>
+        </tr>
+
+      <tr>
+        <td><label for="Phone Number">Phone Number &emsp;  </label></td>
+        <td> <input type="number" name="Phone Number" id="Phone Number"><br><br>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="Country">Country &emsp; &emsp; &emsp; &emsp; &emsp;</label></td>
+        <td> <input type="text" name="Click to Choose" id="Click to Choose"> 
+          <select id="Country" name="Country">
+            <option value="India">India</option>
+            <option value="Jappan">Jappan</option>
+            <option value="China">China</option>
+            <option value="Brazil">Brazil</option>
+        </select><br><br>
+    </td>
+      </tr>
+
+      <tr>
+        <td><label for="Sex">Sex  &emsp;&emsp;&emsp; &emsp;</label></td>
+        <td> <input type="radio" name="Male" id="Male">
+          <label for="Male">Male</label>
+          <input type="radio" name="Female" id="Female">
+          <label for="Female">Female</label><br> <br></td>
+      </tr>
+
+      <tr>
+        <td><label for="Language">Language  &emsp;&emsp;  &emsp;</label></td>
+        <td><input type="checkbox" name="Language1" id="Language1" value="English">
+          <label for="Language1">English</label>
+          <input type="checkbox" name="Language1" id="Language1" value="French">
+          <label for="Language1">French</label>
+          <input type="checkbox" name="Language1" id="Language1" value="Other">
+          <label for="Language1">Other</label><br></td>
+      </tr>
+
+      <tr>
+        <td><label for="Comment">Comment &emsp;  &emsp;</label></td>
+        <td><input type=" text" name="Comment" id="Comment"><br></td>
+      </tr>
+ 
+      <tr>
+     <td><label for="I agree with terms and conditions"></label></td>
+     <td><input type="checkbox" name="rule" id="rule" value="I agree with terms and conditions"> 
+     <label>I agree with terms and conditions </label></td>
+     </tr>
+
+     <tr>
+      <td><input class="register" type="submit" name="Register" id="Register" value="Register"></td>
+     </tr>
+    
+  
+    </table>
+    
+    <br><br>
+    
+ </form>
+
+</body>
+</html>

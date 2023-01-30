@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+           padding: 10px;
+            background-color: rgb(211, 152, 162);
+        }
+        .header {
+            background-color: rgb(146, 112, 170);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .nav {
+            overflow: hidden;
+            background-color: rgb(201, 129, 198);
+        }
+        .nav a {
+         display: block;
+         float: left;
+         text-decoration: none;
+         text-align: center;
+         padding: 20px;
+         color: white;
+        }
+        .nav a:hover {
+            background-color: lightgray;
+            color: black;
+        }
+        .A1 {
+            padding: 10px;
+            background-color: white;
+            margin-top: 20px;
+        }
+        .leftcoloumn {
+           width: 75%;
+           
+           float: left;
+        }
+        .rightcoloumn {
+            width: 25%;
+            float: left;
+            background-color: pink;
+            padding-left: 20px;
+        } 
+        .fakeimg {
+        padding: 20px;
+        width: 100%;
+
+        }
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background-color: pink;
+            margin-top: 20PX;
+
+        } 
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        @media screen and (max-width:600px) {
+            .leftcoloumn,.rightcoloumn {
+                width: 100%;
+                padding: 0%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+  <div class="header"> 
+     <h1>My website</h1>
+     <p>A website is a collection of many web pages, and web pages are digital files that are written using HTML(HyperText Markup Language). </p>
+    </div> 
+
+    <div class="nav">
+        <a href="*">link</a>
+         <a href="*">link</a>
+         <a href="*">link</a>
+        <a href="*" style="float: right;">link</a>
+    </div>
+    
+    <div class="row">
+    <div class="leftcoloumn">
+    <div class="A1">
+        <h2>Title Heading</h2>
+        <h5>Title description</h5>
+        <p>A website is a collection of web pages and related content that is identified by a common domain name and published on at least one web server.
+             Examples of notable websites are Google,
+             Facebook, Amazon, and Wikipedia. All publicly accessible websites collectively constitute the World Wide A website is a collection of web pages and related content 
+             that is identified by a common domain name and published on at least one web server. Examples of notable websites are Google, Facebook, Amazon, and Wikipedia.
+              All publicly accessible websites collectively constitute the World Wide</p></div>
+
+       <div class="A1"> <h2>Title Heading</h2>
+        <h5>Title description</h5>
+        <p>A website is a collection of web pages and related content that is identified by a common domain name and published on at least one web server.
+             Examples of notable websites are Google,
+             Facebook, Amazon, and Wikipedia. All publicly accessible websites collectively constitute the World Wide A website is a collection of web pages and related content 
+             that is identified by a common domain name and published on at least one web server. Examples of notable websites are Google, Facebook, Amazon, and Wikipedia.
+              All publicly accessible websites collectively constitute the World Wide</p>
+    </div>
+    </div>
+
+    <div class="rightcoloumn">
+        <div class="A1">
+            <H2>About me</H2>
+        <div class="fakeimg">
+             <img src="M2.jpeg" alt="m2">
+        </div> 
+            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+        </div>
+
+         <div class="A1">
+
+            <H2> Popular post</H2>
+
+          <div class="fakeimg"> <img src="M1.jpeg" alt="m1" style="height: 150px;">
+             <img src="M2.jpeg" alt="m1" style="height: 150px;">
+             <img src="M3.jpeg" alt="m1" style="height: 150px;">
+          </div>
+
+        </div>
+       
+        
+         <div class="A1">
+            <H2>Follow me</H2>
+            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+      </div>
+      </div>
+      </div>
+      
+
+        <div class="footer">
+            <h3>Footer</h3>
+        </div>
+</body>
+</html>
